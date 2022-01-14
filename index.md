@@ -1,5 +1,6 @@
 # Open Source Software - Spring 2022
-## Name: Benjamin Xu ( moorthy) -
+## Name: Benjamin Xu 
+## Discord: stewcat
 
 ## Bio
 I am a Junior in CS and I like cats. 
