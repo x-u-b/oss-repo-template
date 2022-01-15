@@ -17,4 +17,4 @@ Free Culture:
 ![2022-01-14 (1)](https://user-images.githubusercontent.com/86938356/149566646-e8514210-0296-4174-a1f4-cc1751827adb.png)
 
 # Part 4: Regex
-1) 
+1)
