@@ -17,7 +17,8 @@ Free Culture:
 ![2022-01-14 (1)](https://user-images.githubusercontent.com/86938356/149566646-e8514210-0296-4174-a1f4-cc1751827adb.png)
 
 # Part 4: Regex
-1)
+1) Basic Problems:
+
 ![image](https://user-images.githubusercontent.com/86938356/149630378-bd5b06dc-1f7e-4104-a1da-9fb0ac86fb73.png)
 ![image](https://user-images.githubusercontent.com/86938356/149630442-cc33d4ff-bef4-457b-b357-9753c8544b63.png)
 ![image](https://user-images.githubusercontent.com/86938356/149630481-490898f7-0ce9-47ec-99f4-2c3e6ca06f19.png)
@@ -25,3 +26,12 @@ Free Culture:
 ![image](https://user-images.githubusercontent.com/86938356/149630635-1c569a9b-4c97-4ffb-954c-b681baa986a5.png)
 ![image](https://user-images.githubusercontent.com/86938356/149630744-bf2c28a0-c14e-4ed3-8205-2a027a831c55.png)
 ![image](https://user-images.githubusercontent.com/86938356/149630993-f860df9b-1bc7-46ca-9bb7-360705099bd8.png)
+
+2) Crossword Problems:
+
+![image](https://user-images.githubusercontent.com/86938356/149631342-7a98f458-8722-4d7a-9206-4773296449bd.png)
+![image](https://user-images.githubusercontent.com/86938356/149631722-9d0b2cbd-fc39-4447-936a-acee5e3f2d2d.png)
+![image](https://user-images.githubusercontent.com/86938356/149631770-f2fe9c57-a507-4e41-a097-5ff485010a46.png)
+![image](https://user-images.githubusercontent.com/86938356/149631856-fc496e3f-4546-47c1-94be-c4c9b0396679.png)
+
+
