@@ -18,3 +18,10 @@ Free Culture:
 
 # Part 4: Regex
 1)
+![image](https://user-images.githubusercontent.com/86938356/149630378-bd5b06dc-1f7e-4104-a1da-9fb0ac86fb73.png)
+![image](https://user-images.githubusercontent.com/86938356/149630442-cc33d4ff-bef4-457b-b357-9753c8544b63.png)
+![image](https://user-images.githubusercontent.com/86938356/149630481-490898f7-0ce9-47ec-99f4-2c3e6ca06f19.png)
+![image](https://user-images.githubusercontent.com/86938356/149630606-fa56bd34-901f-44dd-a177-cdaa5c8ecd92.png)
+![image](https://user-images.githubusercontent.com/86938356/149630635-1c569a9b-4c97-4ffb-954c-b681baa986a5.png)
+![image](https://user-images.githubusercontent.com/86938356/149630744-bf2c28a0-c14e-4ed3-8205-2a027a831c55.png)
+![image](https://user-images.githubusercontent.com/86938356/149630993-f860df9b-1bc7-46ca-9bb7-360705099bd8.png)
