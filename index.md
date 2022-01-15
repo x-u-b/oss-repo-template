@@ -4,7 +4,7 @@
 
 ## Bio
 I am a Junior in CS and I like cats. 
-![image](https://user-images.githubusercontent.com/86938356/149567248-e19ff55f-c7a4-4abf-848b-7ea818a9c2e5.png)
+![image](https://user-images.githubusercontent.com/86938356/149630214-e3bdf932-f63b-4658-a816-6eab56ed6a12.png)
 
 ## Lab Reports
 [Lab 1](labs/lab-01/report.md)
