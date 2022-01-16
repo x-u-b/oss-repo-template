@@ -34,4 +34,12 @@ Free Culture:
 ![image](https://user-images.githubusercontent.com/86938356/149631770-f2fe9c57-a507-4e41-a097-5ff485010a46.png)
 ![image](https://user-images.githubusercontent.com/86938356/149631856-fc496e3f-4546-47c1-94be-c4c9b0396679.png)
 
+# Part 5: Snap/Blockly
 
+Blockly Puzzle:
+![image](https://user-images.githubusercontent.com/86938356/149665791-3fafc699-d80f-44ca-96da-b9a6ed095874.png)
+![image](https://user-images.githubusercontent.com/86938356/149665805-aa35d7fc-f5be-45f8-b66d-0ebad9229506.png)
+
+# Part 6: Reflection
+
+Open Source Project: 
