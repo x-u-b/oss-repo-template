@@ -42,4 +42,6 @@ Blockly Puzzle:
 
 # Part 6: Reflection
 
-Open Source Project: 
+Open Source Project: marktext (markdown editor)
+
+The way I found this open source project was through GitHub. They have a trending page for repositories which I sorted by best of the month. While scrolling through all the projects I saw marktext, which appealled to me since I always struggled with creating properly formatted documents using Latex or Markdown. This project is simple yet effective, as it provides a more user friendly interface for a beginner to understand markdown.
