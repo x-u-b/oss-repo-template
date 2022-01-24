@@ -22,3 +22,10 @@ Git Branching:
 
 Pull Request link: https://github.com/x-u-b/PullReq.git
 
+Git Diff:
+![image](https://user-images.githubusercontent.com/86938356/150723770-01a939d2-9620-483d-b941-b4b78ebff775.png)
+
+Git Tag:
+![image](https://user-images.githubusercontent.com/86938356/150724381-bbfce023-f205-4b07-9fe0-a98b89be9ab2.png)
+
+Common Repo Link: https://github.com/jportorreal00/OSSProjectIdeas.git
