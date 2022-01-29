@@ -51,3 +51,8 @@ Latex Formulas:
 
 ### GitStats:
 
+![image](https://user-images.githubusercontent.com/86938356/151669231-b19af6a6-7bac-4c0e-88a1-097fe96fe681.png)
+![image](https://user-images.githubusercontent.com/86938356/151669204-5f6bc853-c111-4f93-9964-657846e3ce6e.png)
+![image](https://user-images.githubusercontent.com/86938356/151669212-fc137f49-f018-47e7-a27c-2653f2a326f1.png)
+
+
