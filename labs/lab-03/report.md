@@ -63,7 +63,7 @@ There are a few differences between the github stats and those produced by gitst
 
 ### B.O.T
 
-![BOT](https://youtu.be/7yOwpPv27is)
+https://youtu.be/7yOwpPv27is
 
 ### B7
 
