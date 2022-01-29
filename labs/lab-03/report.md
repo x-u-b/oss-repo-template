@@ -1,6 +1,6 @@
-### Lab 3: Documentation and Community
+# Lab 3: Documentation and Community
 
-### Part 1
+# Part 1
 
 Latex Formulas:
 ![image](https://user-images.githubusercontent.com/86938356/151600037-232ce74a-3abf-47d6-8fbc-1baf6eade1e4.png)
@@ -9,7 +9,7 @@ Latex Formulas:
 
 
 ### Part 2
-# B.O.T
+### B.O.T
 
 - 3 contributors
 - 373,124 lines of code
@@ -17,7 +17,7 @@ Latex Formulas:
 - Last Commit May 2nd 2020
 - (master)
 
-# B7
+### B7
 
 - 10 contributors
 - 3,861 lines of code
@@ -25,7 +25,7 @@ Latex Formulas:
 - Last Commit Febuary 19th 2020
 - (master)
 
-# BASA-OS
+### BASA-OS
 
 - 4 contributors
 - 784 lines of code
@@ -33,7 +33,7 @@ Latex Formulas:
 - Last Commit December 10th 2018
 - (master)
 
-# BeirRun
+### BeirRun
 
 - 3 contributors
 - 22,163 lines of code
@@ -41,7 +41,7 @@ Latex Formulas:
 - Last Commit August 9th 2020
 - (master)
 
-# Better eBinder
+### Better eBinder
 
 - 2 contributors
 - 14,753 lines of code
@@ -49,5 +49,5 @@ Latex Formulas:
 - Last Commit December 6th 2016
 - (master)
 
-## GitStats:
+### GitStats:
 
