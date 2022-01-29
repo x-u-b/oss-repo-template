@@ -1,6 +1,6 @@
 # Lab 3: Documentation and Community
 
-# Part 1
+# Part 1 - Documentation
 
 Latex Formulas:
 ![image](https://user-images.githubusercontent.com/86938356/151600037-232ce74a-3abf-47d6-8fbc-1baf6eade1e4.png)
@@ -8,7 +8,7 @@ Latex Formulas:
 ![image](https://user-images.githubusercontent.com/86938356/151603923-c2b55174-891c-4fb6-8a31-45d12beccd7b.png)
 
 
-### Part 2
+### Part 2 - Community
 ### B.O.T
 
 - 3 contributors
@@ -55,4 +55,28 @@ Latex Formulas:
 ![image](https://user-images.githubusercontent.com/86938356/151669204-5f6bc853-c111-4f93-9964-657846e3ce6e.png)
 ![image](https://user-images.githubusercontent.com/86938356/151669212-fc137f49-f018-47e7-a27c-2653f2a326f1.png)
 
+# Comparison:
 
+There are a few differences between the github stats and those produced by gitstats. As far as first and last commit dates, those seem to be pretty consistent between the stats. The number of contributors is almost always higher in gitstats. The lines of code is accurate for some projects, a bit over in gitstats in some projects, and in BeirRun, the gitstats shows significantly less lines of code than when done manually. 
+
+# Videos:
+
+### B.O.T
+
+![BOT](https://youtu.be/7yOwpPv27is)
+
+### B7
+
+![b7](https://youtu.be/KyLP_PYUkI4)
+
+### BASA-OS
+
+![BASAOS](https://youtu.be/Duv6WZshL1I)
+
+### BeirRun
+
+![BEIRRUN](https://youtu.be/hW4t6pscJwA)
+
+### Better eBinder
+
+![BETTEREBINDER](https://youtu.be/LpY3XP5FCTc)
