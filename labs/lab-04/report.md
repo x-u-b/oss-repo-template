@@ -7,7 +7,7 @@ It is important to choose a license because of the permissions it provides to ev
 A project without an explicit license could mean the author does not grant anyone permission to use or modify their code. In this case, using the project anyway could get you into trouble with copyright infringement if you chose to redistribute it. Additionally, your own work would belong to you alone meaning that no one else could use or modify your contributions to the project. This would make things messy as different contributors own different sections of the project as a whole. 
 
 ### Why the Web beat Gopher
-
+I agree that Gopher's failure to embrace open source is what ultimately lead to its downfall. With such new and revolutionary technologies, it would be very difficult for a closed team to be able to work optimally. The web team had the right idea in letting all the users decide what they like and how to achieve it. Gopher, on the other hand, was much slower in developing and didn't even necessarily give the users what they wanted. Also, competing ideas within the already small dev team would simply split up the group further into even smaller, less efficient teams. Forking in this non-open source environment simply wasn't going to work.
 
 ### Android and Apache
 Android chooses to use Apache for its userspace license. This is because they want to promote as much third-party development as possible. These projects and their communities would be perfect for creating opportunities for proprietary redistribution. https://arstechnica.com/uncategorized/2007/11/why-google-chose-the-apache-software-license-over-gplv2/
