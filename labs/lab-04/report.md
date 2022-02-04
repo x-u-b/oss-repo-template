@@ -17,12 +17,13 @@ Additionally, Google wants to benefit from the contributions made to open source
 Link to repo: https://github.com/brandon-red/SomeFramework.git
 
 ### RCOS Project Licenses
-|Website|LicensePresent|License|
+|Website|License Present|License|
 |-------|--------------|-------|
-|https://github.com/AstroKey/astrokey.github.io.git| Yes|MIT License https://en.wikipedia.org/wiki/MIT_License|
-||
-||
-||
-||
+|https://github.com/AstroKey/astrokey.github.io.git | Yes|MIT License https://en.wikipedia.org/wiki/MIT_License |
+|https://github.com/AdamPrimak/BrewMe.git | Yes|Apache License 2.0 https://en.wikipedia.org/wiki/Apache_License |
+|https://github.com/ScottNotFound/clara.git | Yes|Apache License 2.0 https://en.wikipedia.org/wiki/Apache_License |
+|https://github.com/casey-c/egg.git | Yes|MIT License https://en.wikipedia.org/wiki/MIT_License |
+|https://github.com/gmisail/Nice.git | Yes|MIT License https://en.wikipedia.org/wiki/MIT_License |
+
 
 
