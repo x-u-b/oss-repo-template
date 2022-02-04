@@ -26,4 +26,5 @@ Link to repo: https://github.com/brandon-red/SomeFramework.git
 |https://github.com/gmisail/Nice.git | Yes|MIT License https://en.wikipedia.org/wiki/MIT_License |
 
 
-
+![image](https://user-images.githubusercontent.com/86938356/152582612-c6be57d5-d2b3-401d-8ec5-d37fc501f830.png)
+This work is licensed under a http://creativecommons.org/licenses/by/4.0/ Creative Commons Attribution 4.0 International License.
