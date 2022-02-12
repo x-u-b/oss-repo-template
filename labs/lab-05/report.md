@@ -86,6 +86,21 @@ program.o: program.c
 block.o: source/block.c
         gcc -c source/block.c -o block.o
 ```
+CMakeLists.txt:
+```
+cmake_minimum_required(VERSION 3.10)
+
+project(Lab5Part2)
+
+add_library(static_lib source/block.c)
+add_library(dynamic_lib SHARED source/block.c)
+
+add_executable(static_block program.c)
+add_executable(dynamic_block program.c)
+
+target_link_libraries(static_block static_lib)
+target_link_libraries(dynamic_block dynamic_lib)
+```
 
 Size Difference: Static = 8464 and Dynamic = 8296
 ![image](https://user-images.githubusercontent.com/86938356/153730227-8b69aa26-f19d-4f99-b324-b3a9d3fe9082.png)
