@@ -61,6 +61,31 @@ Tutorial 4294967296:
 ![image](https://user-images.githubusercontent.com/86938356/153656042-5aa7fd28-fb08-46f1-a4f6-a5150a6a64e8.png)
 
 ### Part 2
+Makefile:
+```
+all: static_block dynamic_block
+
+clean:
+        rm static_block dynamic_block program.o block.o static_lib.a dynamic_lib.so
+
+static_block: static_lib program.o
+        gcc program.o static_lib.a -o static_block
+
+dynamic_block: dynamic_lib program.o
+        gcc program.o dynamic_lib.so -o dynamic_block
+
+static_lib: block.o
+        ar qc static_lib.a block.o
+
+dynamic_lib: block.o
+        gcc -shared -o dynamic_lib.so block.o
+
+program.o: program.c
+        gcc -c program.c -o program.o
+
+block.o: source/block.c
+        gcc -c source/block.c -o block.o
+```
 
 Size Difference: Static = 8464 and Dynamic = 8296
 ![image](https://user-images.githubusercontent.com/86938356/153730227-8b69aa26-f19d-4f99-b324-b3a9d3fe9082.png)
