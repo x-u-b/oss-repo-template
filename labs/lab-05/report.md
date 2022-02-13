@@ -1,6 +1,6 @@
 # Lab 5: Build Systems
 
-### Part 1
+# Part 1
 
 ### Step 1:
 
@@ -132,6 +132,7 @@ target_include_directories(Tutorial PUBLIC
 ```
 
 Tutorial:
+
 ![image](https://user-images.githubusercontent.com/86938356/153738610-f446b4fb-1c92-4d5e-9e57-1417859907c2.png)
 
 Tutorial 10:
@@ -176,7 +177,12 @@ target_include_directories(Tutorial PUBLIC
 ```
 
 MathFunctions/CMakeLists.txt:
-![image](https://user-images.githubusercontent.com/86938356/153650083-6ab467d7-8dc0-4be4-8fa3-d3ffbe449467.png)
+```
+add_library(MathFunctions mysqrt.cxx)
+target_include_directories(MathFunctions
+        INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+        )
+ ```
 
 Tutorial:
 ![image](https://user-images.githubusercontent.com/86938356/153649861-3cb6fca3-8171-4689-b56f-4f3b7bd42a3a.png)
@@ -189,18 +195,189 @@ Tutorial 4294967296:
 
 ### Step 4:
 CMakeLists.txt:
+```
+cmake_minimum_required(VERSION 3.10)
+
+# set the project name and version
+project(Tutorial VERSION 1.0)
+
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# should we use our own math functions
+option(USE_MYMATH "Use tutorial provided math implementation" ON)
+
+# configure a header file to pass some of the CMake settings
+# to the source code
+configure_file(TutorialConfig.h.in TutorialConfig.h)
+
+# add the MathFunctions library
+if(USE_MYMATH)
+  add_subdirectory(MathFunctions)
+  list(APPEND EXTRA_LIBS MathFunctions)
+endif()
+
+# add the executable
+add_executable(Tutorial tutorial.cxx)
+
+target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
+
+# add the binary tree to the search path for include files
+# so that we will find TutorialConfig.h
+target_include_directories(Tutorial PUBLIC
+                           "${PROJECT_BINARY_DIR}"
+                           )
+install(TARGETS Tutorial DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+        DESTINATION include
+        )
+
+enable_testing()
+
+# does the application run
+add_test(NAME Runs COMMAND Tutorial 25)
+
+# does the usage message work?
+add_test(NAME Usage COMMAND Tutorial)
+set_tests_properties(Usage
+          PROPERTIES PASS_REGULAR_EXPRESSION "Usage:.*number"
+          )
+
+# define a function to simplify adding tests
+function(do_test target arg result)
+        add_test(NAME Comp${arg} COMMAND ${target} ${arg})
+        set_tests_properties(Comp${arg}
+                PROPERTIES PASS_REGULAR_EXPRESSION ${result}
+                )
+endfunction()
+
+# do a bunch of result based tests
+do_test(Tutorial 4 "4 is 2")
+do_test(Tutorial 9 "9 is 3")
+do_test(Tutorial 5 "5 is 2.236")
+do_test(Tutorial 7 "7 is 2.645")
+do_test(Tutorial 25 "25 is 5")
+do_test(Tutorial -25 "-25 is (-nan|nan|0)")
+do_test(Tutorial 0.0001 "0.0001 is 0.01")
+```
 
 MathFunctions/CMakeLists.txt:
-![image](https://user-images.githubusercontent.com/86938356/153653400-5342bdea-1b79-4b8f-9d5c-9d55ee50c896.png)
+```
+add_library(MathFunctions mysqrt.cxx)
+
+# state that anybody linking to us needs to include the current source dir
+# to find MathFunctions.h, while we don't.
+target_include_directories(MathFunctions
+          INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+          )
+install(TARGETS MathFunctions DESTINATION lib)
+install(FILES MathFunctions.h DESTINATION include)
+```
 
 ctest -W output:
 ![image](https://user-images.githubusercontent.com/86938356/153652691-114b7849-433f-4fba-9f00-bb6bee763fe0.png)
 
 ### Step 5:
 CMakeLists.txt:
+```
+cmake_minimum_required(VERSION 3.10)
+
+# set the project name and version
+project(Tutorial VERSION 1.0)
+
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# should we use our own math functions
+option(USE_MYMATH "Use tutorial provided math implementation" ON)
+
+# configure a header file to pass some of the CMake settings
+# to the source code
+configure_file(TutorialConfig.h.in TutorialConfig.h)
+
+# add the MathFunctions library
+if(USE_MYMATH)
+  add_subdirectory(MathFunctions)
+  list(APPEND EXTRA_LIBS MathFunctions)
+endif()
+
+# add the executable
+add_executable(Tutorial tutorial.cxx)
+target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
+# add the binary tree to the search path for include files
+# so that we will find TutorialConfig.h
+target_include_directories(Tutorial PUBLIC
+                           "${PROJECT_BINARY_DIR}"
+                           )
+
+# add the install targets
+install(TARGETS Tutorial DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+  DESTINATION include
+  )
+
+# enable testing
+enable_testing()
+
+# does the application run
+add_test(NAME Runs COMMAND Tutorial 25)
+
+# does the usage message work?
+add_test(NAME Usage COMMAND Tutorial)
+set_tests_properties(Usage
+  PROPERTIES PASS_REGULAR_EXPRESSION "Usage:.*number"
+  )
+# define a function to simplify adding tests
+function(do_test target arg result)
+  add_test(NAME Comp${arg} COMMAND ${target} ${arg})
+  set_tests_properties(Comp${arg}
+    PROPERTIES PASS_REGULAR_EXPRESSION ${result}
+    )
+endfunction()
+
+# do a bunch of result based tests
+do_test(Tutorial 4 "4 is 2")
+do_test(Tutorial 9 "9 is 3")
+do_test(Tutorial 5 "5 is 2.236")
+do_test(Tutorial 7 "7 is 2.645")
+do_test(Tutorial 25 "25 is 5")
+do_test(Tutorial -25 "-25 is (-nan|nan|0)")
+do_test(Tutorial 0.0001 "0.0001 is 0.01")
+```
 
 MathFunctions/CMakeLists.txt:
-![image](https://user-images.githubusercontent.com/86938356/153656312-dbaecfd3-04cd-4a60-91b9-c030760a607e.png)
+```
+add_library(MathFunctions mysqrt.cxx)
+
+# state that anybody linking to us needs to include the current source dir
+# to find MathFunctions.h, while we don't.
+target_include_directories(MathFunctions
+          INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+          )
+# does this system provide the log and exp functions?
+include(CheckSymbolExists)
+check_symbol_exists(log "math.h" HAVE_LOG)
+check_symbol_exists(exp "math.h" HAVE_EXP)
+if(NOT (HAVE_LOG AND HAVE_EXP))
+        unset(HAVE_LOG CACHE)
+        unset(HAVE_EXP CACHE)
+        set(CMAKE_REQUIRED_LIBRARIES "m")
+        check_symbol_exists(log "math.h" HAVE_LOG)
+        check_symbol_exists(exp "math.h" HAVE_EXP)
+        if(HAVE_LOG AND HAVE_EXP)
+                target_link_libraries(MathFunctions PRIVATE m)
+        endif()
+endif()
+if(HAVE_LOG AND HAVE_EXP)
+        target_compile_definitions(MathFunctions
+                PRIVATE "HAVE_LOG" "HAVE_EXP")
+endif()
+# install rules
+install(TARGETS MathFunctions DESTINATION lib)
+install(FILES MathFunctions.h DESTINATION include)
+```
 
 Tutorial:
 ![image](https://user-images.githubusercontent.com/86938356/153656150-b51b5f39-28ec-46f5-947a-1b60609452f4.png)
@@ -211,7 +388,7 @@ Tutorial 10:
 Tutorial 4294967296:
 ![image](https://user-images.githubusercontent.com/86938356/153656042-5aa7fd28-fb08-46f1-a4f6-a5150a6a64e8.png)
 
-### Part 2
+# Part 2
 Makefile:
 ```
 all: static_block dynamic_block
