@@ -21,16 +21,15 @@ Results:
 
 #### ATTEMPT 2
 Original Image:
-![sandal](https://user-images.githubusercontent.com/86938356/162588628-e5faab37-e7ad-445a-b27a-bbd8c516c67c.png)
+![sandals](https://user-images.githubusercontent.com/86938356/162589073-834396b7-0882-4b75-b123-fa82c741c7f6.png)
 
 Rescaled Image:
-![sandal](https://user-images.githubusercontent.com/86938356/162588631-62946618-af79-4214-8f1e-2bfc4f1b9672.png)
+![sandals](https://user-images.githubusercontent.com/86938356/162589093-9e889efb-3ff1-42d1-9690-77afad5501fe.png)
 
 Results:
-```[7.94781907e-10 1.32748715e-21 1.04075737e-09 1.94389725e-13
- 1.01628978e-16 1.05645013e-19 6.48150311e-10 9.61214568e-22
- 1.00000000e+00 1.34754249e-15] 8 Bag
- ```
+```[2.3181332e-13 1.2752669e-13 8.4671880e-14 4.4119206e-15 6.6137007e-18
+ 2.8205733e-14 2.7767025e-13 2.2690692e-31 1.0000000e+00 9.2222536e-21] 8 Bag
+```
  
 #### ATTEMPT 3
 Original Image:
